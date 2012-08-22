@@ -609,7 +609,7 @@
      {
          if (returnCode == NSOKButton) {
              NSString *export = [self convertArraytoCsv];
-             [export writeToURL:[panel URL] atomically:YES encoding:1 error:NULL];
+             [export writeToURL:[panel URL] atomically:YES encoding:NSUTF8StringEncoding error:NULL];
          }
      }];
 }
